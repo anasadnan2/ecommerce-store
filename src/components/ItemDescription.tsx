@@ -12,7 +12,7 @@ type ItemDescriptionPro = {
     price: number;
     star: number;
     description: string;
-    count: number;
+    quantity: number;
   };
 };
 // that needed rework
@@ -21,7 +21,7 @@ function ItemDescription({ product }: ItemDescriptionPro) {
   // const { addToCart } = useContext(CartContext);
 
   const handleIncrement = () => {
-    if (count < product.count) {
+    if (count < product.quantity) {
       setCount(count + 1);
     }
   };
@@ -32,7 +32,7 @@ function ItemDescription({ product }: ItemDescriptionPro) {
     }
   };
   const [count, setCount] = useState(0);
-  console.log(product.count);
+  console.log(product.quantity);
   return (
     <Box
       component="section"
@@ -157,7 +157,7 @@ function ItemDescription({ product }: ItemDescriptionPro) {
         {/* -----size-----*/}
         {/* count in stock */}
         <div style={{ fontSize: "18px", fontWeight: "700", color: "darkblue" }}>
-          {product.count} in Stack
+          {product.quantity} in Stack
         </div>
         {/* -------count in stock------- */}
         {/* added to the cart */}
