@@ -15,31 +15,34 @@ import "./index.css";
 import { ThemeProvider } from "@mui/material/styles";
 import theme from "./theme";
 import { ProductProvider } from "./context/ProductsContext";
-// import { CartProvider } from "./context/Cartcontext";
+import { CartProvider } from "./context/Cartcontext";
 
 function App() {
   return (
     <>
       <ProductProvider>
-        {/* <CartProvider> */}
-        <ThemeProvider theme={theme}>
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/blogs" element={<Blogs />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/page/cart" element={<PageCart />} />
-            <Route path="/page/item" element={<PageItem />} />
-            <Route path="/page/shop" element={<PageShop />} />
-            <Route path="/Help&Info/faq" element={<FaqPage />} />
-            <Route
-              path="/Help&Info/returns&refunds"
-              element={<ReturnsAndRefunds />}
-            />
-            <Route path="/Help&Info/WarrantyInfo" element={<WarrantyInfo />} />
-          </Routes>
-        </ThemeProvider>
-        {/* </CartProvider> */}
+        <CartProvider>
+          <ThemeProvider theme={theme}>
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/blogs" element={<Blogs />} />
+              <Route path="/contact" element={<Contact />} />
+              <Route path="/page/cart" element={<PageCart />} />
+              <Route path="/page/item" element={<PageItem />} />
+              <Route path="/page/shop" element={<PageShop />} />
+              <Route path="/Help&Info/faq" element={<FaqPage />} />
+              <Route
+                path="/Help&Info/returns&refunds"
+                element={<ReturnsAndRefunds />}
+              />
+              <Route
+                path="/Help&Info/WarrantyInfo"
+                element={<WarrantyInfo />}
+              />
+            </Routes>
+          </ThemeProvider>
+        </CartProvider>
       </ProductProvider>
       ,
     </>

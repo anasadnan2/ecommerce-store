@@ -164,7 +164,7 @@ function Navbar() {
             <NavLink to="/search">
               <SearchIcon style={{ cursor: "pointer", color: "black" }} />
             </NavLink>
-            <NavLink to="/cart">
+            <NavLink to="/page/cart">
               <ShoppingCartIcon style={{ cursor: "pointer", color: "black" }} />
             </NavLink>
           </div>

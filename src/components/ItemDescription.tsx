@@ -2,23 +2,28 @@
 
 import { Box, Button, ButtonGroup, Typography } from "@mui/material";
 import StarIcon from "@mui/icons-material/Star";
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { NavLink } from "react-router-dom";
-// import { CartContext } from "../context/Cartcontext";
+import CartContext from "../context/Cartcontext";
 type ItemDescriptionPro = {
   product: {
-    image: string;
+    id: number;
     name: string;
+    image: string;
     price: number;
-    star: number;
     description: string;
+    star: number;
     quantity: number;
+    colors: string[];
   };
 };
+
 // that needed rework
 
 function ItemDescription({ product }: ItemDescriptionPro) {
-  // const { addToCart } = useContext(CartContext);
+  const [count, setCount] = useState(0);
+
+  const { addCart } = useContext(CartContext);
 
   const handleIncrement = () => {
     if (count < product.quantity) {
@@ -31,8 +36,10 @@ function ItemDescription({ product }: ItemDescriptionPro) {
       setCount(count - 1);
     }
   };
-  const [count, setCount] = useState(0);
-  console.log(product.quantity);
+  const handleaddcart = () => {
+    addCart({ item: product, count });
+  };
+
   return (
     <Box
       component="section"
@@ -243,8 +250,7 @@ function ItemDescription({ product }: ItemDescriptionPro) {
               BUY NOW
             </Button>
             <Button
-              component={NavLink}
-              to="/page/cart"
+              onClick={handleaddcart}
               variant="contained"
               sx={{
                 bgcolor: "black",

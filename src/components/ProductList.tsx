@@ -13,6 +13,7 @@ type Product = {
 
 function ProductList() {
   const { products } = useContext(ProductContext);
+
   const navigate = useNavigate();
 
   const handleItemClick = (product: Product) => {

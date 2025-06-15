@@ -9,9 +9,7 @@ import ShopOurInstaSection from "../../../components/ShopOurInstaSection";
 import Footer from "../../../components/Footer";
 import RelatedProducts from "../../../components/RelatedProducts";
 
-
 function Index() {
-
   return (
     <div>
       <Navbar />

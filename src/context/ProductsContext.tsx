@@ -32,14 +32,13 @@ export const ProductContext = createContext<ProductContextType>({
   products: [],
 });
 
-// مزود السياق
 export const ProductProvider = ({ children }: { children: ReactNode }) => {
   const products = [
     {
       id: 1,
       name: "Apple Watch Series 9",
       price: 120,
-      quantity: 10, // Stock
+      quantity: 10,
       colors: ["RED", "BLUE", "WHITE"],
       image: photo1,
       description:
@@ -50,7 +49,7 @@ export const ProductProvider = ({ children }: { children: ReactNode }) => {
       id: 2,
       name: "iPhone 16 Pro Max",
       price: 180,
-      quantity: 5, // Stock
+      quantity: 5,
       colors: ["BLACK", "RED"],
       image: photo2,
       description:
@@ -61,7 +60,7 @@ export const ProductProvider = ({ children }: { children: ReactNode }) => {
       id: 3,
       name: "iPad Air M3",
       price: 250,
-      quantity: 8, // Stock
+      quantity: 8,
       colors: ["RED", "BLUE", "WHITE"],
       image: photo3,
       description:
@@ -72,7 +71,7 @@ export const ProductProvider = ({ children }: { children: ReactNode }) => {
       id: 4,
       name: "iPhone 11",
       price: 499,
-      quantity: 12, // Stock
+      quantity: 12,
       colors: ["GOLD", "BLACK"],
       image: photo4,
       description: "iPhone 11, an excellent choice at a good price.",
@@ -82,7 +81,7 @@ export const ProductProvider = ({ children }: { children: ReactNode }) => {
       id: 5,
       name: "Smart Watch Classic",
       price: 120,
-      quantity: 10, // Stock
+      quantity: 10,
       colors: ["RED", "BLUE", "WHITE"],
       image: photo5,
       description:
@@ -93,7 +92,7 @@ export const ProductProvider = ({ children }: { children: ReactNode }) => {
       id: 6,
       name: "iPhone 12",
       price: 300,
-      quantity: 6, // Stock
+      quantity: 6,
       colors: ["GOLD", "BLACK"],
       image: photo6,
       description: "iPhone 12, powerful performance and a distinctive design.",
@@ -103,7 +102,7 @@ export const ProductProvider = ({ children }: { children: ReactNode }) => {
       id: 7,
       name: "AirPods Pro",
       price: 160,
-      quantity: 9, // Stock
+      quantity: 9,
       colors: ["BLACK", "WHITE"],
       image: photo7,
       description:
@@ -114,7 +113,7 @@ export const ProductProvider = ({ children }: { children: ReactNode }) => {
       id: 8,
       name: "iPhone XS",
       price: 500,
-      quantity: 6, // Stock
+      quantity: 6,
       colors: ["GOLD", "BLACK"],
       image: photo8,
       description: "iPhone XS, a reliable device with an excellent camera.",
@@ -124,7 +123,7 @@ export const ProductProvider = ({ children }: { children: ReactNode }) => {
       id: 9,
       name: "Fitness Tracker Watch",
       price: 90,
-      quantity: 15, // Stock
+      quantity: 15,
       colors: ["WHITE", "BLACK"],
       image: photo9,
       description:
@@ -135,7 +134,7 @@ export const ProductProvider = ({ children }: { children: ReactNode }) => {
       id: 10,
       name: "Budget Smartphone",
       price: 110,
-      quantity: 11, // Stock
+      quantity: 11,
       colors: ["BLACK", "RED"],
       image: photo10,
       description:

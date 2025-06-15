@@ -7,7 +7,6 @@ import SubscribeSection from "../../../components/SubscribeSection";
 import ShopOurInstaSection from "../../../components/ShopOurInstaSection";
 import Footer from "../../../components/Footer";
 import RelatedProducts from "../../../components/RelatedProducts";
-//بدها شغل جامد لسا 
 function Index() {
   const location = useLocation();
   const product = location.state;
