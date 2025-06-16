@@ -4,8 +4,11 @@ import Navbar from "../../components/Navbar";
 import HeaderTitle from "../../components/HeaderTitle";
 import ListBlogs from "../../components/ListBlogs";
 import BlogNews from "../../components/BlogNews";
+import SubscribeSection from "../../components/SubscribeSection";
+import ShopOurInstaSection from "../../components/ShopOurInstaSection";
+import Footer from "../../components/Footer";
 
-function index() {
+function Index() {
   return (
     <div>
       <Navbar />
@@ -38,8 +41,11 @@ function index() {
           </div>
         </div>
       </div>
+      <SubscribeSection />
+      <ShopOurInstaSection title="SHOP OUR INSTA" />
+      <Footer />
     </div>
   );
 }
 
-export default index;
+export default Index;
