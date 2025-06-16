@@ -1,12 +1,11 @@
-// scr/components/ListSerach.tsx
-
 import { Button, TextField } from "@mui/material";
-import SearchIcon from "@mui/icons-material/Search";
 import Categories from "./CATEGORIES";
 import Tages from "./Tages";
-import Brands from "./Brands";
+import SearchIcon from "@mui/icons-material/Search";
+import LatestPosts from "./LatestPosts";
+import SocialLinks from "./SocialLinks";
 
-function ListSerach() {
+function ListBlogs() {
   return (
     <div
       style={{
@@ -47,21 +46,17 @@ function ListSerach() {
           <SearchIcon />
         </Button>
       </div>
-      {/* Filters */}
       <div style={{ display: "flex", flexDirection: "column", gap: "30px" }}>
         {/* CATEGORIES */}
         <Categories />
         {/* -----CATEGORIES---- */}
         {/* tages */}
         <Tages />
-        {/* --------tages----------- */}
-        {/* brands */}
-        <Brands />
-        {/* --------brands -------*/}
+        <LatestPosts/>
+        <SocialLinks/>
       </div>
-      {/* --------Filters -------*/}
     </div>
   );
 }
 
-export default ListSerach;
+export default ListBlogs;
