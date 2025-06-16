@@ -12,7 +12,7 @@ function Index() {
   return (
     <div>
       <Navbar />
-      <HeaderTitle title="BLOGS" locationPage="PAGE => BLOGS" />
+      <HeaderTitle title="BLOGS" />
       {/* <LatestPosts />
 
       <SocialLinks /> */}
