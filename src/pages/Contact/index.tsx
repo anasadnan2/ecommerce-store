@@ -4,7 +4,7 @@
 import HeaderTitle from "../../components/HeaderTitle";
 import Navbar from "../../components/Navbar";
 
-function index() {
+function Index() {
   return (
     <div>
       <Navbar />
@@ -15,4 +15,4 @@ function index() {
   );
 }
 
-export default index;
+export default Index;

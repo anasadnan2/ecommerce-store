@@ -10,7 +10,7 @@ import SubscribeSection from "../../components/SubscribeSection";
 import ShopOurInstaSection from "../../components/ShopOurInstaSection";
 import Footer from "../../components/Footer";
 
-function index() {
+function Index() {
   return (
     <div>
       <Navbar />
@@ -30,4 +30,4 @@ function index() {
   );
 }
 
-export default index;
+export default Index;
