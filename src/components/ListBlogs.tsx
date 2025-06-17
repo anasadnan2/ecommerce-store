@@ -1,9 +1,9 @@
 import { Button, TextField } from "@mui/material";
-import Categories from "./CATEGORIES";
 import Tages from "./Tages";
 import SearchIcon from "@mui/icons-material/Search";
 import LatestPosts from "./LatestPosts";
 import SocialLinks from "./SocialLinks";
+import Categories from "./Category";
 
 function ListBlogs() {
   return (
@@ -52,8 +52,8 @@ function ListBlogs() {
         {/* -----CATEGORIES---- */}
         {/* tages */}
         <Tages />
-        <LatestPosts/>
-        <SocialLinks/>
+        <LatestPosts />
+        <SocialLinks />
       </div>
     </div>
   );

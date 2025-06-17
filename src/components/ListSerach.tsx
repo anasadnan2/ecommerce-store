@@ -2,7 +2,7 @@
 
 import { Button, TextField } from "@mui/material";
 import SearchIcon from "@mui/icons-material/Search";
-import Categories from "./CATEGORIES";
+import Categories from "./Category";
 import Tages from "./Tages";
 import Brands from "./Brands";
 
