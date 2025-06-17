@@ -6,8 +6,7 @@ A modern, fully responsive ecommerce store built with **React**, **TypeScript**,
 
 ## 🚀 Live Preview
 
-> _Coming soon or insert deployment link here_
-
+https://ecommerce-anasstore.netlify.app/
 ---
 
 ## 🧩 Key Features
